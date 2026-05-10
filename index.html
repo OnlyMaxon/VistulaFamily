@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vistula Family — Мы Семья</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <canvas id="particles"></canvas>
+
+    <!-- NAV -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <div class="nav-logo">Vistula <span>Family</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#team">Команда</a></li>
+                <li><a href="#join" class="nav-cta">Присоединиться</a></li>
+            </ul>
+            <button class="burger" id="burger" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#about" class="mob-link">О нас</a>
+            <a href="#team" class="mob-link">Команда</a>
+            <a href="#join" class="mob-link highlight">Присоединиться</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-badge reveal">— Добро пожаловать —</div>
+            <h1 class="hero-title reveal">
+                Vistula<br><span class="gold">Family</span>
+            </h1>
+            <p class="hero-sub reveal">
+                Мы не просто сообщество — мы <strong>Семья</strong>.<br>
+                Поддерживаем друг друга, растём вместе и создаём что-то большее.
+            </p>
+            <div class="hero-btns reveal">
+                <a href="#join" class="btn-primary">Вступить в семью</a>
+                <a href="#about" class="btn-ghost">Узнать больше</a>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <div class="scroll-line"></div>
+            <span>Листай вниз</span>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+            <div class="section-label reveal">Кто мы</div>
+            <h2 class="section-title reveal">Одна семья.<br>Один путь.</h2>
+            <p class="section-desc reveal">
+                Vistula Family — это живое сообщество людей, объединённых общими ценностями: честностью, взаимопомощью и стремлением к росту. Здесь каждый находит своё место.
+            </p>
+            <div class="cards-grid">
+                <div class="card reveal">
+                    <div class="card-icon">🤝</div>
+                    <h3>Поддержка</h3>
+                    <p>Мы всегда рядом. В любой ситуации ты можешь рассчитывать на нашу семью.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">🚀</div>
+                    <h3>Развитие</h3>
+                    <p>Мы растём вместе — делимся опытом, знаниями и открываем новые возможности.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">❤️</div>
+                    <h3>Единство</h3>
+                    <p>Наша сила — в единстве. Каждый участник — ценная часть нашей большой семьи.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team">
+        <div class="container">
+            <div class="section-label reveal">Наши люди</div>
+            <h2 class="section-title reveal">Те, кто создаёт<br>эту семью</h2>
+            <p class="section-desc reveal">За каждым большим сообществом стоят конкретные люди. Познакомьтесь с теми, кто делает Vistula Family живой.</p>
+            <div class="team-grid">
+                <div class="team-card reveal">
+                    <div class="team-photo placeholder" data-initials="М"></div>
+                    <div class="team-info">
+                        <div class="team-role">Директор</div>
+                        <h3 class="team-name">Макс</h3>
+                        <p class="team-desc">Основатель и движущая сила семьи. Макс задаёт вектор развития и строит фундамент, на котором держится всё сообщество.</p>
+                    </div>
+                </div>
+                <div class="team-card featured reveal">
+                    <div class="team-badge">Лицо Family</div>
+                    <div class="team-photo placeholder" data-initials="Н"></div>
+                    <div class="team-info">
+                        <div class="team-role">Лицо сообщества</div>
+                        <h3 class="team-name">Никита</h3>
+                        <p class="team-desc">Голос и лицо Vistula Family. Никита — тот, кто представляет нас миру и делает каждого новичка своим.</p>
+                    </div>
+                </div>
+                <div class="team-card reveal">
+                    <div class="team-photo placeholder" data-initials="В"></div>
+                    <div class="team-info">
+                        <div class="team-role">Content Creator</div>
+                        <h3 class="team-name">Веня</h3>
+                        <p class="team-desc">Творческая душа семьи. Веня создаёт контент, который отражает дух нашего сообщества и вдохновляет каждого.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JOIN -->
+    <section id="join">
+        <div class="container">
+            <div class="join-box reveal">
+                <div class="join-glow"></div>
+                <div class="tg-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8l-1.68 7.93c-.12.58-.46.72-.94.45l-2.6-1.92-1.25 1.2c-.14.14-.26.26-.52.26l.18-2.67 4.74-4.28c.21-.18-.04-.28-.32-.1L8.14 14.47l-2.53-.79c-.55-.17-.56-.55.12-.82l9.87-3.8c.46-.17.86.11.04.84v-.1z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h2 class="join-title">Стань частью<br><span class="gold">нашей семьи</span></h2>
+                <p class="join-desc">Присоединяйся к нашему Telegram-сообществу — место, где тебя ждут, поддержат и вдохновят.</p>
+                <a href="https://t.me/+1NnQFAm-xDRmYmM6" target="_blank" rel="noopener noreferrer" class="btn-telegram">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8l-1.68 7.93c-.12.58-.46.72-.94.45l-2.6-1.92-1.25 1.2c-.14.14-.26.26-.52.26l.18-2.67 4.74-4.28c.21-.18-.04-.28-.32-.1L8.14 14.47l-2.53-.79c-.55-.17-.56-.55.12-.82l9.87-3.8c.46-.17.86.11.04.84v-.1z" fill="white"/>
+                    </svg>
+                    Открыть в Telegram
+                </a>
+                <div class="join-note">Бесплатно · Открыто для всех · Ты наш</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-logo">Vistula Family</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
