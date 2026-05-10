@@ -447,6 +447,7 @@ section { position: relative; z-index: 1; }
     align-items: center;
     justify-content: center;
     font-size: 3rem;
+    overflow: hidden;
     transition: border-color var(--transition), transform var(--transition);
 }
 .car-card:hover .car-photo {
